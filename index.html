@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <header id="title">
+            <h1>Survey Form</h1>
+            <p>Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form id="form">
+            <div class="data">
+                <label for="">Name</label>
+                <input type="text" name="name" autocomplete="on" placeholder="Enter your name" required>
+            </div>
+            <div class="data">
+                <label for="">Email</label>
+                <input type="email" name="email" autocomplete="on" placeholder="Enter your email" required>
+            </div>
+            <div class="data">
+                <label for="">Age</label>
+                <input type="number" name="age" autocomplete="on" placeholder="Enter your age" required>
+            </div>
+            <div class="data">
+                <label>Which option best describes your current role?</label>
+                <select name="" class="data" required>
+                    <option value="1">Select</option>
+                    <option value="2">Student</option>
+                    <option value="3">Full Time Job</option>
+                    <option value="4">Part Time Job</option>
+                    <option value="5">Freelancer</option>
+                </select> 
+            </div>
+            <div class="data">
+                <label>Would you recommend [Company Name] to a friend?</label><br>
+                <input type="radio" name="company name" value="Definitely"><label for="" class="radio">Definitely</label> <br>
+                <input type="radio" name="company name" value="Maybe"><label for="" class="radio">Maybe</label><br>
+                <input type="radio" name="company name" value="Not Sure"><label for="" class="radio">Not Sure</label>
+            </div>
+            <div class="data">
+                <label>What would you like to see improved?</label><br>
+                <input type="checkbox"><label for="Front-end projects" class="checkbox">Front-end projects</label><br>
+                <input type="checkbox"><label for="Back-end projects" class="checkbox">Back-end projects</label><br>
+                <input type="checkbox"><label for="Challenges" class="checkbox">Challenges</label>
+            </div>
+            <div class="data">
+                <label>Any comments or suggestions?</label>
+                <textarea name="comments" id="text"  placeholder="Enter your comments here..."></textarea>
+            </div>
+            <div>
+                <input type="reset" value="reset">
+                <input type="submit" value="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
